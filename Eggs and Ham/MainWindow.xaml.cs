@@ -24,5 +24,25 @@ namespace Eggs_and_Ham
         {
             InitializeComponent();
         }
+
+        private void btnMenuKaart_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void btnBestellingen_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void btnResrveringen_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void btnRekening_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
