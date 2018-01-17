@@ -14,7 +14,7 @@
         <Button Name="btnMenuKaart"    Grid.ColumnSpan="2" Content="Menu kaart"   HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="120" Height="30" Click="btnMenuKaart_Click" FontWeight="Bold" FontSize="14" Background="White" BorderBrush="Black"/>
         <Button Name="btnBestellingen" Grid.ColumnSpan="2" Content="Bestellingen" HorizontalAlignment="Left" Margin="10,45,0,0" VerticalAlignment="Top" Width="120" Height="30" Click="btnBestellingen_Click" FontWeight="Bold" FontSize="14" Background="White" BorderBrush="Black"/>
         <Button Name="btnResrveringen" Grid.ColumnSpan="2" Content="Resrveringen" HorizontalAlignment="Left" Margin="10,80,0,0" VerticalAlignment="Top" Width="120" Height="30" Click="btnResrveringen_Click" FontWeight="Bold" FontSize="14" Background="White" BorderBrush="Black"/>
-        <Button Name="btnRekening"     Grid.ColumnSpan="2" Content="Rekening"     HorizontalAlignment="Left" Margin="10,115,0,0" VerticalAlignment="Top" Width="120" Height="30" Click="btnRekening_Click" FontWeight="Bold" FontSize="14" Background="White" BorderBrush="Black"/>
+        <Button Name="btnRekening"     Grid.ColumnSpan="2" Content="Rekening"     HorizontalAlignment="Left" Margin="10,143,0,0" VerticalAlignment="Top" Width="120" Height="30" Click="btnRekening_Click" FontWeight="Bold" FontSize="14" Background="White" BorderBrush="Black"/>
 
     </Grid>
 </Window>
