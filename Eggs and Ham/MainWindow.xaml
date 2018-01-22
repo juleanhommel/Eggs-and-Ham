@@ -5,17 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Eggs_and_Ham"
         mc:Ignorable="d"
-        Title="Hoofd menu" Height="300" Width="400" ResizeMode="NoResize">
-    <Grid>
-        <Grid Name="Hoofd_Menu" Visibility="Visible">
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="0*"/>
-            <ColumnDefinition/>
-            </Grid.ColumnDefinitions>
-            <Button Name="btnMenuKaart"    Grid.ColumnSpan="2" Content="Menu kaart"   HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="120" Height="30" Click="btnMenuKaart_Click" FontWeight="Bold" FontSize="14" Background="White" BorderBrush="Black"/>
-            <Button Name="btnBestellingen" Grid.ColumnSpan="2" Content="Bestellingen" HorizontalAlignment="Left" Margin="10,45,0,0" VerticalAlignment="Top" Width="120" Height="30" Click="btnBestellingen_Click" FontWeight="Bold" FontSize="14" Background="White" BorderBrush="Black"/>
-            <Button Name="btnResrveringen" Grid.ColumnSpan="2" Content="Resrveringen" HorizontalAlignment="Left" Margin="10,80,0,0" VerticalAlignment="Top" Width="120" Height="30" Click="btnResrveringen_Click" FontWeight="Bold" FontSize="14" Background="White" BorderBrush="Black"/>
-            <Button Name="btnRekening"     Grid.ColumnSpan="2" Content="Rekening"     HorizontalAlignment="Left" Margin="10,115,0,0" VerticalAlignment="Top" Width="120" Height="30" Click="btnRekening_Click" FontWeight="Bold" FontSize="14" Background="White" BorderBrush="Black"/>
-        </Grid>
+        Title="Eggs And Ham" Height="300" Width="400" ResizeMode="NoResize">
+    <Grid Name="Screen1">
+
     </Grid>
 </Window>
