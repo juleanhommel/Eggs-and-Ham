@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:Eggs_and_Ham"
         mc:Ignorable="d"
         Title="Eggs And Ham" Height="300" Width="400" ResizeMode="NoResize">
-    <Grid Name="Screen1">
+    <Grid Name="Screen">
 
     </Grid>
 </Window>

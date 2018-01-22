@@ -16,19 +16,13 @@ using System.Windows.Shapes;
 namespace Eggs_and_Ham
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for HoofdMenu.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class HoofdMenu : Page
     {
-        public static Frame MainMenu = new Frame();
-        public MainWindow()
+        public HoofdMenu()
         {
             InitializeComponent();
-            Screen.Children.Add(MainMenu);
-            MainMenu.NavigationUIVisibility = NavigationUIVisibility.Hidden;
-            MainMenu.HorizontalAlignment = HorizontalAlignment.Stretch;
-            MainMenu.VerticalAlignment = VerticalAlignment.Stretch;
-            MainMenu.Navigate(new MenuKaart());
         }
     }
 }
