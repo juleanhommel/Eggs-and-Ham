@@ -27,7 +27,7 @@ namespace Eggs_and_Ham
 
         private void btnMenuKaart_Click(object sender, RoutedEventArgs e)
         {
-
+            Hoofd_Menu.Visibility = Visibility.Hidden;
         }
 
         private void btnBestellingen_Click(object sender, RoutedEventArgs e)
@@ -41,6 +41,11 @@ namespace Eggs_and_Ham
         }
 
         private void btnRekening_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void ProgressBar_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
         {
 
         }
