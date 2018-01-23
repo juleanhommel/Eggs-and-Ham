@@ -39,7 +39,8 @@ namespace Eggs_and_Ham
 
             //alle properties van button invoeroke
             invoeroke.Margin = new Thickness(0, 0, 0, 0);
-            invoeroke.Content = "ADD";
+            invoeroke.Width = 50;
+            invoeroke.Content = "Add";
 
             //alle properties van textbox invoerGroep
             invoerGroep.Margin = new Thickness(0, 0, 0, 0);
