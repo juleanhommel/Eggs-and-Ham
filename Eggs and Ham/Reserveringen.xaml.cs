@@ -30,6 +30,12 @@ namespace Eggs_and_Ham
             ReserveringMain.Children.Add(Reservering);
             Reservering.SelectionMode = SelectionMode.Single;
             Reservering.Items.Add("Nieuwe reservering");
+            Reservering.SelectionChanged += Reservering_SelectionChanged;
+        }
+
+        private void Reservering_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
         }
     }
 }
