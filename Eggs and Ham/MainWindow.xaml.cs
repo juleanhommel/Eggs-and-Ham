@@ -28,7 +28,7 @@ namespace Eggs_and_Ham
             MainMenu.NavigationUIVisibility = NavigationUIVisibility.Hidden;
             MainMenu.HorizontalAlignment = HorizontalAlignment.Stretch;
             MainMenu.VerticalAlignment = VerticalAlignment.Stretch;
-            MainMenu.Navigate(new MenuKaart());
+            MainMenu.Navigate(new HoofdMenu());
         }
     }
 }

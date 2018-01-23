@@ -20,9 +20,16 @@ namespace Eggs_and_Ham
     /// </summary>
     public partial class Reserveringen : Page
     {
+        public static ListBox Reservering = new ListBox();
         public Reserveringen()
         {
             InitializeComponent();
+            Reservering.HorizontalAlignment = HorizontalAlignment.Left;
+            Reservering.VerticalAlignment = VerticalAlignment.Top;
+            Reservering.Margin = new Thickness(10, 10, 0, 0);
+            ReserveringMain.Children.Add(Reservering);
+            Reservering.SelectionMode = SelectionMode.Single;
+            Reservering.Items.Add("Nieuwe reservering");
         }
     }
 }

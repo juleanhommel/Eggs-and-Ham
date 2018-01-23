@@ -22,7 +22,13 @@ namespace Eggs_and_Ham
     {
         public HoofdMenu()
         {
+
             InitializeComponent();
+        }
+
+        private void btnReserveringen_Click(object sender, RoutedEventArgs e)
+        {
+            MainWindow.MainMenu.Navigate(new Reserveringen());
         }
     }
 }
