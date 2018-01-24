@@ -13,7 +13,7 @@
             <ColumnDefinition Width="0*"/>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
-        <Button Name="btnMenuKaart"    Grid.ColumnSpan="2" Content="Menu kaart"   HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="120" Height="30" FontWeight="Bold" FontSize="14" Background="White" BorderBrush="Black"/>
+        <Button Name="btnMenuKaart"    Grid.ColumnSpan="2" Content="Menu kaart"   HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="120" Height="30" FontWeight="Bold" FontSize="14" Background="White" BorderBrush="Black" Click="btnMenuKaart_Click"/>
         <Button Name="btnBestellingen" Grid.ColumnSpan="2" Content="Bestellingen" HorizontalAlignment="Left" Margin="10,45,0,0" VerticalAlignment="Top" Width="120" Height="30" FontWeight="Bold" FontSize="14" Background="White" BorderBrush="Black"/>
         <Button x:Name="btnReserveringen" Grid.ColumnSpan="2" Content="Reserveringen" HorizontalAlignment="Left" Margin="10,80,0,0" VerticalAlignment="Top" Width="120" Height="30" FontWeight="Bold" FontSize="14" Background="White" BorderBrush="Black" Click="btnReserveringen_Click"/>
         <Button Name="btnRekening"     Grid.ColumnSpan="2" Content="Rekening"     HorizontalAlignment="Left" Margin="10,115,0,0" VerticalAlignment="Top" Width="120" Height="30" FontWeight="Bold" FontSize="14" Background="White" BorderBrush="Black"/>

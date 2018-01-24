@@ -30,5 +30,10 @@ namespace Eggs_and_Ham
         {
             MainWindow.MainMenu.Navigate(new Reserveringen());
         }
+
+        private void btnMenuKaart_Click(object sender, RoutedEventArgs e)
+        {
+            MainWindow.MainMenu.Navigate(new MenuKaart());
+        }
     }
 }
