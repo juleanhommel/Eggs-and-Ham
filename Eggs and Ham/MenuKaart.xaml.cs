@@ -20,9 +20,17 @@ namespace Eggs_and_Ham
     /// </summary>
     public partial class MenuKaart : Page
     {
+        public static ListBox MenuKaartLB = new ListBox();
         public MenuKaart()
         {
             InitializeComponent();
+
+            MenuKaartLB.Items.Add("Menu Kaart");
+            MenuKaartLB.HorizontalAlignment = HorizontalAlignment.Left;
+            MenuKaartLB.VerticalAlignment = VerticalAlignment.Top;
+            MenuKaartLB.Margin = new Thickness(10, 10, 0, 0);
+            Hoofd_Menu.Children.Add(MenuKaartLB);
+
         }
     }
 }
