@@ -25,16 +25,22 @@ namespace Eggs_and_Ham
         public static StackPanel invoercheck = new StackPanel();
         public static Button invoeroke = new Button();
         public static TextBox invoerGroep = new TextBox();
+        public static Button NewReservering = new Button();
         public Reserveringen()
         {
             InitializeComponent();
+            //alle properties van de NewReservering button
+            NewReservering.HorizontalAlignment = HorizontalAlignment.Stretch;
+            NewReservering.VerticalAlignment = VerticalAlignment.Stretch;
+            NewReservering.Content = "Nieuwe Reservering";
+            NewReservering.Click += NewReservering_Click;
             //alle properties van de listbox bij reserveringen
             Reservering.HorizontalAlignment = HorizontalAlignment.Left;
             Reservering.VerticalAlignment = VerticalAlignment.Top;
             Reservering.Margin = new Thickness(10, 10, 0, 0);
             ReserveringMain.Children.Add(Reservering);
             Reservering.SelectionMode = SelectionMode.Single;
-            Reservering.Items.Add("Nieuwe reservering");
+            Reservering.Items.Add(NewReservering);
             Reservering.SelectionChanged += Reservering_SelectionChanged;
 
             //alle properties van button invoeroke
@@ -59,15 +65,15 @@ namespace Eggs_and_Ham
             //stackpanel.children.add de button erin. en de textbox
         }
 
+        public void NewReservering_Click(object sender, RoutedEventArgs e)
+        {
+            invoerGroep.Text = "";
+        }
+
         private void Reservering_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             strResVan = ((ListBox)sender).SelectedItem.ToString();
-            if (strResVan == "Nieuwe reservering")
-            {
-
-                //Wanneer je op nieuwe reservering klikt dan word er een nieuw item aangemaakt in de reserveringen lijst.
-            }
-            else
+            if (strResVan != "Nieuwe reservering")
             {
                 MainWindow.MainMenu.Navigate(new MenuKaart());
                 //Wanneer je op de reservering van een groep klikt ga je naar de menukaart om hun bestelling op te nemen.
