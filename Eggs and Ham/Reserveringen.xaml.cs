@@ -24,33 +24,30 @@ namespace Eggs_and_Ham
         public static string strResVan;
         public static StackPanel invoercheck = new StackPanel();
         public static Button invoeroke = new Button();
-        public static TextBox invoerGroep = new TextBox();
-        public static Button NewReservering = new Button();
+        public static TextBox invoerGroeptxt = new TextBox();
+        public static string CreateGroep;
+        
         public Reserveringen()
         {
             InitializeComponent();
-            //alle properties van de NewReservering button
-            NewReservering.HorizontalAlignment = HorizontalAlignment.Stretch;
-            NewReservering.VerticalAlignment = VerticalAlignment.Stretch;
-            NewReservering.Content = "Nieuwe Reservering";
-            NewReservering.Click += NewReservering_Click;
             //alle properties van de listbox bij reserveringen
             Reservering.HorizontalAlignment = HorizontalAlignment.Left;
             Reservering.VerticalAlignment = VerticalAlignment.Top;
             Reservering.Margin = new Thickness(10, 10, 0, 0);
             ReserveringMain.Children.Add(Reservering);
             Reservering.SelectionMode = SelectionMode.Single;
-            Reservering.Items.Add(NewReservering);
+            Reservering.Items.Add("Reserveringen:");
             Reservering.SelectionChanged += Reservering_SelectionChanged;
 
             //alle properties van button invoeroke
             invoeroke.Margin = new Thickness(0, 0, 0, 0);
             invoeroke.Width = 50;
             invoeroke.Content = "Add";
+            invoeroke.Click += Addreservering;
 
             //alle properties van textbox invoerGroep
-            invoerGroep.Margin = new Thickness(0, 0, 0, 0);
-            invoerGroep.Width = 150;
+            invoerGroeptxt.Margin = new Thickness(0, 0, 0, 0);
+            invoerGroeptxt.Width = 150;
 
 
             //alle properties van de stackpanel invoercheck
@@ -59,25 +56,32 @@ namespace Eggs_and_Ham
             invoercheck.VerticalAlignment = VerticalAlignment.Bottom;
             invoercheck.Margin = new Thickness(0, 0, 10, 10);
             ReserveringMain.Children.Add(invoercheck);
-            invoercheck.Children.Add(invoerGroep);
+            invoercheck.Children.Add(invoerGroeptxt);
             invoercheck.Children.Add(invoeroke);
             
             //stackpanel.children.add de button erin. en de textbox
         }
 
-        public void NewReservering_Click(object sender, RoutedEventArgs e)
+        public void Addreservering(object sender, RoutedEventArgs e)
         {
-            invoerGroep.Text = "";
+            CreateGroep = invoerGroeptxt.Text;
+            Groep createGroep = new Groep ();
+            Reservering.Items.Add(invoerGroeptxt.Text);
+            invoerGroeptxt.Text = "";
         }
 
         private void Reservering_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             strResVan = ((ListBox)sender).SelectedItem.ToString();
-            if (strResVan != "Nieuwe reservering")
+            if (strResVan != "Reserveringen:")
             {
                 MainWindow.MainMenu.Navigate(new MenuKaart());
                 //Wanneer je op de reservering van een groep klikt ga je naar de menukaart om hun bestelling op te nemen.
             }
         }
+    }
+    public class Groep
+    {
+        public ListBox Gasten = new ListBox();
     }
 }
