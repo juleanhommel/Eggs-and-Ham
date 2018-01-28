@@ -20,10 +20,15 @@ namespace Eggs_and_Ham
     /// </summary>
     public partial class HoofdMenu : Page
     {
+        public static string[] ArrTafels = new string[10];
         public HoofdMenu()
         {
 
             InitializeComponent();
+            for (int i = 0; i < 10; i++)
+            {
+                ArrTafels[i] = "leeg";
+            }
         }
 
         private void btnReserveringen_Click(object sender, RoutedEventArgs e)
@@ -34,6 +39,11 @@ namespace Eggs_and_Ham
         private void btnMenuKaart_Click(object sender, RoutedEventArgs e)
         {
             MainWindow.MainMenu.Navigate(new MenuKaart());
+        }
+
+        private void btnBestellingen_Click(object sender, RoutedEventArgs e)
+        {
+            MainWindow.MainMenu.Navigate(new Bestellingen());
         }
     }
 }

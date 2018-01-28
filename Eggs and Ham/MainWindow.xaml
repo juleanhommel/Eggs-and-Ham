@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Eggs_and_Ham"
         mc:Ignorable="d"
-        Title="Eggs And Ham" Height="300" Width="400" ResizeMode="NoResize">
+        Title="Eggs And Ham" Height="600" Width="600" ResizeMode="NoResize">
     <Grid Name="Screen">
 
     </Grid>

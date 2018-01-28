@@ -25,25 +25,32 @@ namespace Eggs_and_Ham
         public static StackPanel invoercheck = new StackPanel();
         public static Button invoeroke = new Button();
         public static TextBox invoerGroeptxt = new TextBox();
-        public static string CreateGroep;
-        
+        public static Button Terug = new Button();
+
         public Reserveringen()
         {
             InitializeComponent();
+
+
             //alle properties van de listbox bij reserveringen
             Reservering.HorizontalAlignment = HorizontalAlignment.Left;
             Reservering.VerticalAlignment = VerticalAlignment.Top;
             Reservering.Margin = new Thickness(10, 10, 0, 0);
-            ReserveringMain.Children.Add(Reservering);
             Reservering.SelectionMode = SelectionMode.Single;
             Reservering.Items.Add("Reserveringen:");
             Reservering.SelectionChanged += Reservering_SelectionChanged;
+            ReserveringMain.Children.Add(Reservering);
 
             //alle properties van button invoeroke
             invoeroke.Margin = new Thickness(0, 0, 0, 0);
             invoeroke.Width = 50;
             invoeroke.Content = "Add";
             invoeroke.Click += Addreservering;
+
+            //alle properties Terugknop
+            Terug.Width = 50;
+            Terug.Content = "terug";
+            Terug.Click += Back;
 
             //alle properties van textbox invoerGroep
             invoerGroeptxt.Margin = new Thickness(0, 0, 0, 0);
@@ -56,16 +63,21 @@ namespace Eggs_and_Ham
             invoercheck.VerticalAlignment = VerticalAlignment.Bottom;
             invoercheck.Margin = new Thickness(0, 0, 10, 10);
             ReserveringMain.Children.Add(invoercheck);
+            invoercheck.Children.Add(Terug);
             invoercheck.Children.Add(invoerGroeptxt);
             invoercheck.Children.Add(invoeroke);
-            
+
             //stackpanel.children.add de button erin. en de textbox
+        }
+
+        public void Back(object sender, RoutedEventArgs e)
+        {
+            ReserveringMain.Children.Clear();
+            MainWindow.MainMenu.Navigate(new HoofdMenu());
         }
 
         public void Addreservering(object sender, RoutedEventArgs e)
         {
-            CreateGroep = invoerGroeptxt.Text;
-            Groep createGroep = new Groep ();
             Reservering.Items.Add(invoerGroeptxt.Text);
             invoerGroeptxt.Text = "";
         }
@@ -79,9 +91,5 @@ namespace Eggs_and_Ham
                 //Wanneer je op de reservering van een groep klikt ga je naar de menukaart om hun bestelling op te nemen.
             }
         }
-    }
-    public class Groep
-    {
-        public ListBox Gasten = new ListBox();
     }
 }
