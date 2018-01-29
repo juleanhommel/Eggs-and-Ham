@@ -26,6 +26,7 @@ namespace Eggs_and_Ham
         public static Button invoeroke = new Button();
         public static TextBox invoerGroeptxt = new TextBox();
         public static Button Terug = new Button();
+        public static bool FirstLoad = true;
 
         public Reserveringen()
         {
@@ -37,7 +38,6 @@ namespace Eggs_and_Ham
             Reservering.VerticalAlignment = VerticalAlignment.Top;
             Reservering.Margin = new Thickness(10, 10, 0, 0);
             Reservering.SelectionMode = SelectionMode.Single;
-            Reservering.Items.Add("Reserveringen:");
             Reservering.SelectionChanged += Reservering_SelectionChanged;
             ReserveringMain.Children.Add(Reservering);
 
@@ -67,12 +67,21 @@ namespace Eggs_and_Ham
             invoercheck.Children.Add(invoerGroeptxt);
             invoercheck.Children.Add(invoeroke);
 
+            if (FirstLoad == true)
+            {
+                Reservering.Items.Add("Reserveringen:");
+                FirstLoad = false;
+            }
+
             //stackpanel.children.add de button erin. en de textbox
         }
 
         public void Back(object sender, RoutedEventArgs e)
         {
+            invoeroke.Click -= Addreservering;
+            Reservering.SelectionChanged -= Reservering_SelectionChanged;
             ReserveringMain.Children.Clear();
+            invoercheck.Children.Clear();
             MainWindow.MainMenu.Navigate(new HoofdMenu());
         }
 
