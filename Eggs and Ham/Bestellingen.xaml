@@ -9,5 +9,26 @@
       Title="Bestellingen">
 
     <Grid Name="BestelWindow">
+        <Button Content="Button" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="75" Height="49"/>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="85,10,0,0" VerticalAlignment="Top" Width="75" Height="49"/>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="160,10,0,0" VerticalAlignment="Top" Width="75" Height="49"/>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="10,59,0,0" VerticalAlignment="Top" Width="75" Height="49"/>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="160,59,0,0" VerticalAlignment="Top" Width="75" Height="49"/>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="160,157,0,0" VerticalAlignment="Top" Width="75" Height="49"/>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="310,59,0,0" VerticalAlignment="Top" Width="75" Height="49"/>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="160,108,0,0" VerticalAlignment="Top" Width="75" Height="49"/>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="85,59,0,0" VerticalAlignment="Top" Width="75" Height="49"/>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="10,108,0,0" VerticalAlignment="Top" Width="75" Height="49"/>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="10,157,0,0" VerticalAlignment="Top" Width="75" Height="49"/>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="235,108,0,0" VerticalAlignment="Top" Width="75" Height="49"/>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="235,157,0,0" VerticalAlignment="Top" Width="75" Height="49"/>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="310,108,0,0" VerticalAlignment="Top" Width="75" Height="49" />
+        <Button Content="Button" HorizontalAlignment="Left" Margin="310,157,0,0" VerticalAlignment="Top" Width="75" Height="49"/>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="85,108,0,0" VerticalAlignment="Top" Width="75" Height="49"/>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="85,157,0,0" VerticalAlignment="Top" Width="75" Height="49"/>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="235,10,0,0" VerticalAlignment="Top" Width="75" Height="49"/>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="310,10,0,0" VerticalAlignment="Top" Width="75" Height="49"/>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="235,59,0,0" VerticalAlignment="Top" Width="75" Height="49"/>
+
     </Grid>
 </Page>
