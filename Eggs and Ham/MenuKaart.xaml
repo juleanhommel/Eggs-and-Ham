@@ -12,9 +12,9 @@
         <StackPanel HorizontalAlignment="Stretch" Height="48" VerticalAlignment="Bottom" Width="600" Orientation="Horizontal">
             <Button Content="Button" Width="80" HorizontalAlignment="Stretch"/>
         </StackPanel>
-        <StackPanel HorizontalAlignment="Left" Height="362" VerticalAlignment="Top" Width="252">
-            <Label Content=""/>
-            <StackPanel Name="MenuBox"/>
+        <StackPanel HorizontalAlignment="Left" Height="362" VerticalAlignment="Top" Width="252" Orientation="Vertical">
+            <Label Content="MenuKaart:"/>
+            <StackPanel Name="MenuBox" Orientation="Vertical"/>
         </StackPanel>
     </Grid>
 </Page>

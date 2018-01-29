@@ -20,9 +20,23 @@ namespace Eggs_and_Ham
     /// </summary>
     public partial class MenuKaart : Page
     {
+        public static ListBox MenuList = new ListBox();
         public MenuKaart()
         {
             InitializeComponent();
+            MenuBox.Children.Clear();
+            MenuBox.Children.Add(MenuList);
+            Dummydata();
+        }
+        public void Dummydata()
+        {
+            MenuList.Items.Clear();
+            MenuList.Items.Add("Eggs");
+            MenuList.Items.Add("Ham");
+            MenuList.Items.Add("Steak");
+            MenuList.Items.Add("Cola");
+            MenuList.Items.Add("Fanta");
+            MenuList.Items.Add("7-Up");
         }
     }
 }
