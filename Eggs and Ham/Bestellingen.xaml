@@ -10,25 +10,25 @@
 
     <Grid Name="BestelWindow">
         <Button Content="Tafel 1" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="75" Height="49" Click="ShowList"/>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="85,10,0,0" VerticalAlignment="Top" Width="75" Height="49" Click="ShowList"/>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="160,10,0,0" VerticalAlignment="Top" Width="75" Height="49" Click="ShowList"/>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="10,59,0,0" VerticalAlignment="Top" Width="75" Height="49" Click="ShowList"/>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="160,59,0,0" VerticalAlignment="Top" Width="75" Height="49" Click="ShowList"/>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="160,157,0,0" VerticalAlignment="Top" Width="75" Height="49" Click="ShowList"/>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="310,59,0,0" VerticalAlignment="Top" Width="75" Height="49" Click="ShowList"/>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="160,108,0,0" VerticalAlignment="Top" Width="75" Height="49" Click="ShowList"/>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="85,59,0,0" VerticalAlignment="Top" Width="75" Height="49" Click="ShowList"/>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="10,108,0,0" VerticalAlignment="Top" Width="75" Height="49" Click="ShowList"/>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="10,157,0,0" VerticalAlignment="Top" Width="75" Height="49" Click="ShowList"/>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="235,108,0,0" VerticalAlignment="Top" Width="75" Height="49" Click="ShowList"/>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="235,157,0,0" VerticalAlignment="Top" Width="75" Height="49" Click="ShowList"/>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="310,108,0,0" VerticalAlignment="Top" Width="75" Height="49" Click="ShowList"/>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="310,157,0,0" VerticalAlignment="Top" Width="75" Height="49" Click="ShowList"/>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="85,108,0,0" VerticalAlignment="Top" Width="75" Height="49" Click="ShowList"/>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="85,157,0,0" VerticalAlignment="Top" Width="75" Height="49" Click="ShowList"/>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="235,10,0,0" VerticalAlignment="Top" Width="75" Height="49" Click="ShowList"/>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="310,10,0,0" VerticalAlignment="Top" Width="75" Height="49" Click="ShowList"/>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="235,59,0,0" VerticalAlignment="Top" Width="75" Height="49" Click="ShowList"/>
+        <Button Content="Tafel 2" HorizontalAlignment="Left" Margin="85,10,0,0" VerticalAlignment="Top" Width="75" Height="49" Click="ShowList"/>
+        <Button Content="Tafel 3" HorizontalAlignment="Left" Margin="160,10,0,0" VerticalAlignment="Top" Width="75" Height="49" Click="ShowList"/>
+        <Button Content="Tafel 6" HorizontalAlignment="Left" Margin="10,59,0,0" VerticalAlignment="Top" Width="75" Height="49" Click="ShowList"/>
+        <Button Content="Tafel 8" HorizontalAlignment="Left" Margin="160,59,0,0" VerticalAlignment="Top" Width="75" Height="49" Click="ShowList"/>
+        <Button Content="Tafel 18" HorizontalAlignment="Left" Margin="160,157,0,0" VerticalAlignment="Top" Width="75" Height="49" Click="ShowList"/>
+        <Button Content="Tafel 10" HorizontalAlignment="Left" Margin="310,59,0,0" VerticalAlignment="Top" Width="75" Height="49" Click="ShowList"/>
+        <Button Content="Tafel 13" HorizontalAlignment="Left" Margin="160,108,0,0" VerticalAlignment="Top" Width="75" Height="49" Click="ShowList"/>
+        <Button Content="Tafel 7" HorizontalAlignment="Left" Margin="85,59,0,0" VerticalAlignment="Top" Width="75" Height="49" Click="ShowList"/>
+        <Button Content="Tafel 11" HorizontalAlignment="Left" Margin="10,108,0,0" VerticalAlignment="Top" Width="75" Height="49" Click="ShowList"/>
+        <Button Content="Tafel 16" HorizontalAlignment="Left" Margin="10,157,0,0" VerticalAlignment="Top" Width="75" Height="49" Click="ShowList"/>
+        <Button Content="Tafel 14" HorizontalAlignment="Left" Margin="235,108,0,0" VerticalAlignment="Top" Width="75" Height="49" Click="ShowList"/>
+        <Button Content="Tafel 19" HorizontalAlignment="Left" Margin="235,157,0,0" VerticalAlignment="Top" Width="75" Height="49" Click="ShowList"/>
+        <Button Content="Tafel 15" HorizontalAlignment="Left" Margin="310,108,0,0" VerticalAlignment="Top" Width="75" Height="49" Click="ShowList"/>
+        <Button Content="Tafel 20" HorizontalAlignment="Left" Margin="310,157,0,0" VerticalAlignment="Top" Width="75" Height="49" Click="ShowList"/>
+        <Button Content="Tafel 12" HorizontalAlignment="Left" Margin="85,108,0,0" VerticalAlignment="Top" Width="75" Height="49" Click="ShowList"/>
+        <Button Content="Tafel 17" HorizontalAlignment="Left" Margin="85,157,0,0" VerticalAlignment="Top" Width="75" Height="49" Click="ShowList"/>
+        <Button Content="Tafel 4" HorizontalAlignment="Left" Margin="235,10,0,0" VerticalAlignment="Top" Width="75" Height="49" Click="ShowList"/>
+        <Button Content="Tafel 5" HorizontalAlignment="Left" Margin="310,10,0,0" VerticalAlignment="Top" Width="75" Height="49" Click="ShowList"/>
+        <Button Content="Tafel 9" HorizontalAlignment="Left" Margin="235,59,0,0" VerticalAlignment="Top" Width="75" Height="49" Click="ShowList"/>
         <StackPanel Name="BackBar" HorizontalAlignment="Stretch" Height="60" VerticalAlignment="Bottom" Orientation="Horizontal">
             <Button Content="Terug" Width="71" Margin="0,0,0,3"/>
         </StackPanel>
