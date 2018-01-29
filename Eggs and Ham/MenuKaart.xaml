@@ -10,7 +10,7 @@
 
     <Grid Name="Menu_kaart" Visibility="Visible">
         <StackPanel HorizontalAlignment="Stretch" Height="48" VerticalAlignment="Bottom" Width="600" Orientation="Horizontal">
-            <Button Content="Button" Width="80" HorizontalAlignment="Stretch"/>
+            <Button Name="Terug" Content="Terug" Width="80" HorizontalAlignment="Stretch" Click="Terug_Click"/>
         </StackPanel>
         <StackPanel HorizontalAlignment="Left" Height="362" VerticalAlignment="Top" Width="252" Orientation="Vertical">
             <Label Content="MenuKaart:"/>

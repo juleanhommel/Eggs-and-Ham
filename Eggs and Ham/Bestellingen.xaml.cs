@@ -44,6 +44,8 @@ namespace Eggs_and_Ham
         public Bestellingen()
         {
             InitializeComponent();
+            BestelMenu.Children.Clear();
+            BestelMenu.Children.Add(MenuKaart.MenuList);
         }
 
         public void ShowList(object sender, RoutedEventArgs e)
@@ -130,6 +132,13 @@ namespace Eggs_and_Ham
                 StackList.Children.Add(Tafel_20);
             }
             TafelNaam.Content = ((Button)sender).Content.ToString();
+        }
+
+        private void Terug_Click(object sender, RoutedEventArgs e)
+        {
+            BestelMenu.Children.Clear();
+            StackList.Children.Clear();
+            MainWindow.MainMenu.Navigate(new HoofdMenu());
         }
     }
 }

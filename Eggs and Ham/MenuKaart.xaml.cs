@@ -38,5 +38,11 @@ namespace Eggs_and_Ham
             MenuList.Items.Add("Fanta");
             MenuList.Items.Add("7-Up");
         }
+
+        private void Terug_Click(object sender, RoutedEventArgs e)
+        {
+            MenuBox.Children.Clear();
+            MainWindow.MainMenu.Navigate(new HoofdMenu());
+        }
     }
 }

@@ -30,11 +30,15 @@
         <Button Content="Tafel 5" HorizontalAlignment="Left" Margin="310,10,0,0" VerticalAlignment="Top" Width="75" Height="49" Click="ShowList"/>
         <Button Content="Tafel 9" HorizontalAlignment="Left" Margin="235,59,0,0" VerticalAlignment="Top" Width="75" Height="49" Click="ShowList"/>
         <StackPanel Name="BackBar" HorizontalAlignment="Stretch" Height="60" VerticalAlignment="Bottom" Orientation="Horizontal">
-            <Button Content="Terug" Width="71" Margin="0,0,0,3"/>
+            <Button Name="Terug" Content="Terug" Width="71" Margin="0,0,0,3" Click="Terug_Click"/>
         </StackPanel>
         <StackPanel HorizontalAlignment="Left" Height="393" Margin="410,44,0,0" VerticalAlignment="Top" Width="180" Orientation="Vertical">
-            <Label Name="TafelNaam"/>
+            <Label Name="TafelNaam" Content="Tafel"/>
             <StackPanel Name="StackList" Orientation="Vertical"/>
+        </StackPanel>
+        <StackPanel HorizontalAlignment="Left" Height="256" Margin="10,247,0,0" VerticalAlignment="Top" Width="300" Orientation="Vertical">
+            <Label Content="Menukaart:"/>
+            <StackPanel Name="BestelMenu" Height="231" Orientation="Vertical"/>
         </StackPanel>
 
     </Grid>
