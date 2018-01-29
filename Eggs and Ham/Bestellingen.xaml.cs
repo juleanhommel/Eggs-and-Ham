@@ -234,5 +234,7 @@ namespace Eggs_and_Ham
             BestelWindow.Children.Clear();
             MainWindow.MainMenu.Navigate(new HoofdMenu());
         }
+
+
     }
 }
