@@ -9,6 +9,12 @@
       Title="Reserveringen">
 
     <Grid Name="ReserveringMain">
-        
+        <Label Content="Reserveringen:" HorizontalAlignment="Left" Margin="20,37,0,0" VerticalAlignment="Top" Width="112" Height="26"/>
+        <ListBox HorizontalAlignment="Left" Height="400" Margin="20,68,0,0" VerticalAlignment="Top" Width="183" Grid.ColumnSpan="2"/>
+        <StackPanel HorizontalAlignment="Left" Height="36" Margin="0,564,0,0" VerticalAlignment="Top" Width="600" Grid.ColumnSpan="2">
+            <Button Content="toevoegen" Margin="494,0,0,0" Height="34"/>
+        </StackPanel>
+        <TextBox HorizontalAlignment="Left" Height="36" Margin="226,564,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="188"/>
+
     </Grid>
 </Page>
