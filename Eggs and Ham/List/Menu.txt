@@ -1,6 +1,6 @@
 Eggs
 Ham
 Steak
-Cola
-Fanta
-7-Up
+cola
+7-up
+gehaktbal
