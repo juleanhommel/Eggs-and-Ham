@@ -33,6 +33,9 @@ namespace Eggs_and_Ham
         {
             MenuList.Items.Clear();
             LoadMenu();
+            //een resize doorgeven misschien
+            string[] regels = LoadMenu();
+            MenuList.Items.Add(LoadMenu());
         }
 
         private void Terug_Click(object sender, RoutedEventArgs e)
@@ -41,14 +44,19 @@ namespace Eggs_and_Ham
             MainWindow.MainMenu.Navigate(new HoofdMenu());
         }
 
-        public static void LoadMenu()
+        public static string[] LoadMenu()
         {
             StreamReader sr = new StreamReader("../../List/Menu.txt");
             String line;
+            String[] lines = new string[1];
+            int i = 0;
             while ((line = sr.ReadLine()) != null)
             {
-                MenuList.Items.Add(line);
+                lines[i] = line;
+                i++;
+                Array.Resize(ref lines, lines.Length + 1);
             }
+            return lines;
 
         }
 

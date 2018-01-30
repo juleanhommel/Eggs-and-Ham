@@ -20,6 +20,8 @@ namespace Eggs_and_Ham
     /// </summary>
     public partial class Bestellingen : Page
     {
+        public static ListBox MenuSelect = new ListBox();
+
         public static ListBox Tafel_1 = new ListBox();
         public static ListBox Tafel_2 = new ListBox();
         public static ListBox Tafel_3 = new ListBox();
