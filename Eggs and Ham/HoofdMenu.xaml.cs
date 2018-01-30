@@ -22,7 +22,6 @@ namespace Eggs_and_Ham
     {
         public HoofdMenu()
         {
-
             InitializeComponent();
         }
 

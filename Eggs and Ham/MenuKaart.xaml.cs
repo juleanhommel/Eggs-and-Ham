@@ -28,7 +28,7 @@ namespace Eggs_and_Ham
             MenuBox.Children.Add(MenuList);
             Dummydata();
         }
-        public void Dummydata()
+        public static void Dummydata()
         {
             MenuList.Items.Clear();
             MenuList.Items.Add("Eggs");

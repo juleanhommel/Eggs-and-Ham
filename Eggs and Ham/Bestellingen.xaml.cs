@@ -46,6 +46,7 @@ namespace Eggs_and_Ham
             InitializeComponent();
             BestelMenu.Children.Clear();
             BestelMenu.Children.Add(MenuKaart.MenuList);
+            MenuKaart.Dummydata();
         }
 
         public void ShowList(object sender, RoutedEventArgs e)
@@ -131,7 +132,7 @@ namespace Eggs_and_Ham
             {
                 StackList.Children.Add(Tafel_20);
             }
-            TafelNaam.Content = ((Button)sender).Content.ToString();
+            TafelSelected.Content = ((Button)sender).Content.ToString();
         }
 
         private void Terug_Click(object sender, RoutedEventArgs e)

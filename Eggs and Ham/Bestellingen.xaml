@@ -33,7 +33,7 @@
             <Button Name="Terug" Content="Terug" Width="71" Margin="0,0,0,3" Click="Terug_Click"/>
         </StackPanel>
         <StackPanel HorizontalAlignment="Left" Height="393" Margin="410,44,0,0" VerticalAlignment="Top" Width="180" Orientation="Vertical">
-            <Label Name="TafelNaam" Content="Tafel"/>
+            <Label Name="TafelSelected" Content="Tafel"/>
             <StackPanel Name="StackList" Orientation="Vertical"/>
         </StackPanel>
         <StackPanel HorizontalAlignment="Left" Height="256" Margin="10,247,0,0" VerticalAlignment="Top" Width="300" Orientation="Vertical">
