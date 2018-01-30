@@ -39,5 +39,10 @@ namespace Eggs_and_Ham
         {
             MainWindow.MainMenu.Navigate(new Bestellingen());
         }
+
+        private void btnRekening_Click(object sender, RoutedEventArgs e)
+        {
+            MainWindow.MainMenu.Navigate(new Rekening());
+        }
     }
 }
