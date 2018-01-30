@@ -33,6 +33,7 @@
        
         <StackPanel Name="BackBar" HorizontalAlignment="Stretch" Height="60" VerticalAlignment="Bottom" Orientation="Horizontal">
             <Button Name="Terug" Content="Terug" Width="71" Margin="0,0,0,3" Click="Terug_Click"/>
+            <Button Name="Toevoegen" Content="Toevoegen" HorizontalAlignment="Right" VerticalAlignment="Stretch" Margin="420,0,0,0" Width="75" Click="Toevoegen_Click"/>
         </StackPanel>
        
         <StackPanel HorizontalAlignment="Left" Height="393" Margin="410,44,0,0" VerticalAlignment="Top" Width="180" Orientation="Vertical">

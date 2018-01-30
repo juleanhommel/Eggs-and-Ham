@@ -43,6 +43,8 @@ namespace Eggs_and_Ham
         public static ListBox Tafel_19 = new ListBox();
         public static ListBox Tafel_20 = new ListBox();
 
+        public static String TafelNaam;
+
         public Bestellingen()
         {
             InitializeComponent();
@@ -142,6 +144,17 @@ namespace Eggs_and_Ham
             BestelMenu.Children.Clear();
             StackList.Children.Clear();
             MainWindow.MainMenu.Navigate(new HoofdMenu());
+        }
+
+        private void Toevoegen_Click(object sender, RoutedEventArgs e)
+        {
+            if (TafelSelected.Content.ToString() != "Tafel")
+            {
+                if (MenuKaart.MenuList.SelectedIndex != -1)
+                {
+                    
+                }
+            }
         }
     }
 }

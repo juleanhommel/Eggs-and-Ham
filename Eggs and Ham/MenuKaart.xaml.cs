@@ -32,10 +32,11 @@ namespace Eggs_and_Ham
         public static void Dummydata()
         {
             MenuList.Items.Clear();
-            LoadMenu();
-            //een resize doorgeven misschien
             string[] regels = LoadMenu();
-            MenuList.Items.Add(LoadMenu());
+            foreach (string line in regels)
+            {
+                MenuList.Items.Add(line);
+            }
         }
 
         private void Terug_Click(object sender, RoutedEventArgs e)
@@ -48,16 +49,15 @@ namespace Eggs_and_Ham
         {
             StreamReader sr = new StreamReader("../../List/Menu.txt");
             String line;
-            String[] lines = new string[1];
+            String[] lines = new string[0];
             int i = 0;
             while ((line = sr.ReadLine()) != null)
             {
+                Array.Resize(ref lines, lines.Length + 1);
                 lines[i] = line;
                 i++;
-                Array.Resize(ref lines, lines.Length + 1);
             }
             return lines;
-
         }
 
 
@@ -77,6 +77,18 @@ namespace Eggs_and_Ham
             MenuList.Items.Add(NextItem.Text);
             WriteText();
             NextItem.Text = "";
+        }
+
+        private void Vervangen_Click(object sender, RoutedEventArgs e)
+        {
+            if (MenuList.SelectedIndex != -1)
+            {
+                int index = MenuList.SelectedIndex;
+                MenuList.Items.RemoveAt(index);
+                MenuList.Items.Insert(index, NextItem.Text);
+                WriteText();
+                NextItem.Text = "";
+            }
         }
     }
 }
