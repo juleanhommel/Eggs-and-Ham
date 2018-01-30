@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.IO;
 
 namespace Eggs_and_Ham
 {
@@ -31,18 +32,36 @@ namespace Eggs_and_Ham
         public static void Dummydata()
         {
             MenuList.Items.Clear();
-            MenuList.Items.Add("Eggs");
-            MenuList.Items.Add("Ham");
-            MenuList.Items.Add("Steak");
-            MenuList.Items.Add("Cola");
-            MenuList.Items.Add("Fanta");
-            MenuList.Items.Add("7-Up");
+            ReadText();
         }
 
         private void Terug_Click(object sender, RoutedEventArgs e)
         {
             MenuBox.Children.Clear();
             MainWindow.MainMenu.Navigate(new HoofdMenu());
+        }
+
+        public static void ReadText()
+        {
+            using (StreamReader sr = new StreamReader("../../List/Menu.txt"))
+            {
+                String line;
+
+                line = sr.ReadLine();
+                MenuList.Items.Add(line);
+            }
+        }
+
+
+        public static void WriteText()
+        {
+            using (StreamWriter sw = new StreamWriter("../../List/Menu.txt"))
+            {
+                foreach (string line in MenuList.Items)
+                {
+                    sw.WriteLine(line);
+                }
+            }
         }
     }
 }

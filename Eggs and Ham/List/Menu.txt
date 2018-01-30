@@ -1,1 +1,6 @@
-﻿
+Eggs
+Ham
+Steak
+Cola
+Fanta
+7-Up
