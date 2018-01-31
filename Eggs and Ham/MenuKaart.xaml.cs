@@ -57,6 +57,7 @@ namespace Eggs_and_Ham
                 lines[i] = line;
                 i++;
             }
+            sr.Close();
             return lines;
         }
 
@@ -69,6 +70,7 @@ namespace Eggs_and_Ham
                 {
                     sw.WriteLine(line);
                 }
+                sw.Close();
             }
         }
 
@@ -79,13 +81,12 @@ namespace Eggs_and_Ham
             NextItem.Text = "";
         }
 
-        private void Vervangen_Click(object sender, RoutedEventArgs e)
+        private void Verwijder_Click(object sender, RoutedEventArgs e)
         {
             if (MenuList.SelectedIndex != -1)
             {
                 int index = MenuList.SelectedIndex;
                 MenuList.Items.RemoveAt(index);
-                MenuList.Items.Insert(index, NextItem.Text);
                 WriteText();
                 NextItem.Text = "";
             }
