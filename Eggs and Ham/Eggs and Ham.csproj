@@ -143,61 +143,104 @@
     </Resource>
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="List\Tafel_2.txt" />
+    <Resource Include="List\Tafel_2.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="List\Tafel_3.txt" />
+    <Resource Include="List\Tafel_3.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="List\Tafel_11.txt" />
+    <Resource Include="List\Tafel_11.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="List\Tafel_10.txt" />
+    <Resource Include="List\Tafel_10.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="List\Tafel_9.txt" />
+    <Resource Include="List\Tafel_9.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="List\Tafel_8.txt" />
+    <Resource Include="List\Tafel_8.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="List\Tafel_7.txt" />
+    <Resource Include="List\Tafel_7.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="List\Tafel_6.txt" />
+    <Resource Include="List\Tafel_6.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="List\Tafel_5.txt" />
+    <Resource Include="List\Tafel_5.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="List\Tafel_4.txt" />
+    <Resource Include="List\Tafel_4.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="List\Tafel_20.txt" />
+    <Resource Include="List\Tafel_20.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="List\Tafel_21.txt" />
+    <Resource Include="List\Tafel_21.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="List\Tafel_12.txt" />
+    <Resource Include="List\Tafel_12.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="List\Tafel_13.txt" />
+    <Resource Include="List\Tafel_13.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="List\Tafel_14.txt" />
+    <Resource Include="List\Tafel_14.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="List\Tafel_15.txt" />
+    <Resource Include="List\Tafel_15.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="List\Tafel_16.txt" />
+    <Resource Include="List\Tafel_16.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="List\Tafel_17.txt" />
+    <Resource Include="List\Tafel_17.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="List\Tafel_18.txt" />
+    <Resource Include="List\Tafel_18.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="List\Reservering.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

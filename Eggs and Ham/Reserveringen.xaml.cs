@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.IO;
 
 namespace Eggs_and_Ham
 {
@@ -24,17 +25,67 @@ namespace Eggs_and_Ham
         public Reserveringen()
         {
             InitializeComponent();
+            this.LoadRes();
         }
 
         private void Add_Click(object sender, RoutedEventArgs e)
         {
             ResList.Items.Add(InvoerReservering.Text);
             InvoerReservering.Text = "";
+            this.WriteText();
+        }
+
+        public void WriteText()
+        {
+            using (StreamWriter sw = new StreamWriter("../../List/Reservering.txt"))
+            {
+                foreach (string line in ResList.Items)
+                {
+                    sw.WriteLine(line);
+                }
+                sw.Close();
+            }
+        }
+
+        public void LoadRes()
+        {
+            ResList.Items.Clear();
+            string[] regels = LoadMenu();
+            foreach (string line in regels)
+            {
+                ResList.Items.Add(line);
+            }
+        }
+
+        public static string[] LoadMenu()
+        {
+            StreamReader sr = new StreamReader("../../List/Reservering.txt");
+            String line;
+            String[] lines = new string[0];
+            int i = 0;
+            while ((line = sr.ReadLine()) != null)
+            {
+                Array.Resize(ref lines, lines.Length + 1);
+                lines[i] = line;
+                i++;
+            }
+            sr.Close();
+            return lines;
         }
 
         private void Terug_Click(object sender, RoutedEventArgs e)
         {
             MainWindow.MainMenu.Navigate(new HoofdMenu());
+        }
+
+        private void Remove_Click(object sender, RoutedEventArgs e)
+        {
+            if (ResList.SelectedIndex != -1)
+            {
+                int index = ResList.SelectedIndex;
+                ResList.Items.RemoveAt(index);
+                this.WriteText();
+            }
         }
     }
 }
