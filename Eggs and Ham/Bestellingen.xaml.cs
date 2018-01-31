@@ -193,6 +193,158 @@ namespace Eggs_and_Ham
                     Tafel_1.Items.Add(line);
                 }
             }
+            else if (Table == "Tafel_2")
+            {
+                Tafel_2.Items.Clear();
+                foreach (string line in regels)
+                {
+                    Tafel_2.Items.Add(line);
+                }
+            }
+            else if (Table == "Tafel_3")
+            {
+                Tafel_3.Items.Clear();
+                foreach (string line in regels)
+                {
+                    Tafel_3.Items.Add(line);
+                }
+            }
+            else if (Table == "Tafel_4")
+            {
+                Tafel_4.Items.Clear();
+                foreach (string line in regels)
+                {
+                    Tafel_4.Items.Add(line);
+                }
+            }
+            else if (Table == "Tafel_5")
+            {
+                Tafel_5.Items.Clear();
+                foreach (string line in regels)
+                {
+                    Tafel_5.Items.Add(line);
+                }
+            }
+            else if (Table == "Tafel_6")
+            {
+                Tafel_6.Items.Clear();
+                foreach (string line in regels)
+                {
+                    Tafel_6.Items.Add(line);
+                }
+            }
+            else if (Table == "Tafel_7")
+            {
+                Tafel_7.Items.Clear();
+                foreach (string line in regels)
+                {
+                    Tafel_7.Items.Add(line);
+                }
+            }
+            else if (Table == "Tafel_8")
+            {
+                Tafel_8.Items.Clear();
+                foreach (string line in regels)
+                {
+                    Tafel_8.Items.Add(line);
+                }
+            }
+            else if (Table == "Tafel_9")
+            {
+                Tafel_9.Items.Clear();
+                foreach (string line in regels)
+                {
+                    Tafel_9.Items.Add(line);
+                }
+            }
+            else if (Table == "Tafel_10")
+            {
+                Tafel_10.Items.Clear();
+                foreach (string line in regels)
+                {
+                    Tafel_10.Items.Add(line);
+                }
+            }
+            else if (Table == "Tafel_11")
+            {
+                Tafel_11.Items.Clear();
+                foreach (string line in regels)
+                {
+                    Tafel_11.Items.Add(line);
+                }
+            }
+            else if (Table == "Tafel_12")
+            {
+                Tafel_12.Items.Clear();
+                foreach (string line in regels)
+                {
+                    Tafel_12.Items.Add(line);
+                }
+            }
+            else if (Table == "Tafel_13")
+            {
+                Tafel_13.Items.Clear();
+                foreach (string line in regels)
+                {
+                    Tafel_13.Items.Add(line);
+                }
+            }
+            else if (Table == "Tafel_14")
+            {
+                Tafel_14.Items.Clear();
+                foreach (string line in regels)
+                {
+                    Tafel_14.Items.Add(line);
+                }
+            }
+            else if (Table == "Tafel_15")
+            {
+                Tafel_15.Items.Clear();
+                foreach (string line in regels)
+                {
+                    Tafel_15.Items.Add(line);
+                }
+            }
+            else if (Table == "Tafel_16")
+            {
+                Tafel_16.Items.Clear();
+                foreach (string line in regels)
+                {
+                    Tafel_16.Items.Add(line);
+                }
+            }
+            else if (Table == "Tafel_17")
+            {
+                Tafel_17.Items.Clear();
+                foreach (string line in regels)
+                {
+                    Tafel_17.Items.Add(line);
+                }
+            }
+            else if (Table == "Tafel_18")
+            {
+                Tafel_18.Items.Clear();
+                foreach (string line in regels)
+                {
+                    Tafel_18.Items.Add(line);
+                }
+            }
+            else if (Table == "Tafel_19")
+            {
+                Tafel_19.Items.Clear();
+                foreach (string line in regels)
+                {
+                    Tafel_19.Items.Add(line);
+                }
+            }
+            else if (Table == "Tafel_20")
+            {
+                Tafel_20.Items.Clear();
+                foreach (string line in regels)
+                {
+                    Tafel_20.Items.Add(line);
+                }
+            }
         }
 
         public static string[] LoadMenu()
