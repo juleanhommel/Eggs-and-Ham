@@ -8,7 +8,7 @@
       d:DesignHeight="300" d:DesignWidth="300"
       Title="Rekening">
     <Grid>
-        <StackPanel Name="BackBarRekening" HorizontalAlignment="Stretch" Height="60" VerticalAlignment="Bottom" Orientation="Horizontal">
+        <StackPanel Name="BackBarRekening" HorizontalAlignment="Stretch" Height="40" VerticalAlignment="Bottom" Orientation="Horizontal">
             <Button Name="Terug" Content="Terug" Width="71" Margin="0,0,0,3" Click="Terug_Click"/>
         </StackPanel>
     </Grid>

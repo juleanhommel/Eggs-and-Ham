@@ -30,8 +30,8 @@
         <Button Name="Tafel4"  Content="Tafel 4"  HorizontalAlignment="Left" Margin="235,10,0,0"  VerticalAlignment="Top" Width="75" Height="49" Click="ShowList"/>
         <Button Name="Tafel5"  Content="Tafel 5"  HorizontalAlignment="Left" Margin="310,10,0,0"  VerticalAlignment="Top" Width="75" Height="49" Click="ShowList"/>
         <Button Name="Tafel9"  Content="Tafel 9"  HorizontalAlignment="Left" Margin="235,59,0,0"  VerticalAlignment="Top" Width="75" Height="49" Click="ShowList"/>
-       
-        <StackPanel Name="BackBar" HorizontalAlignment="Stretch" Height="60" VerticalAlignment="Bottom" Orientation="Horizontal">
+
+        <StackPanel Name="BackBar" HorizontalAlignment="Stretch" Height="40" VerticalAlignment="Bottom" Orientation="Horizontal">
             <Button Name="Terug" Content="Terug" Width="71" Margin="0,0,0,3" Click="Terug_Click"/>
             <Button Name="Toevoegen" Content="Toevoegen" HorizontalAlignment="Right" VerticalAlignment="Stretch" Margin="420,0,0,0" Width="75" Click="Toevoegen_Click"/>
         </StackPanel>
