@@ -172,7 +172,7 @@ namespace Eggs_and_Ham
 
         private void Toevoegen_Click(object sender, RoutedEventArgs e)
         {
-            if (TafelSelected.Content.ToString() != "Tafel")
+            if (TafelSelected.Content.ToString() != "Tafel" && MenuKaart.MenuList.SelectedIndex != -1)
             {
                 if (Table == "Tafel_1")
                 {
@@ -591,7 +591,7 @@ namespace Eggs_and_Ham
 
         private void Verwijder_Click(object sender, RoutedEventArgs e)
         {
-            if (TafelSelected.Content.ToString() != "Tafel" && MenuKaart.MenuList.SelectedIndex != -1)
+            if (TafelSelected.Content.ToString() != "Tafel")
             {
                 if (Table == "Tafel_1")
                 {
