@@ -172,16 +172,13 @@ namespace Eggs_and_Ham
 
         private void Toevoegen_Click(object sender, RoutedEventArgs e)
         {
-            if (TafelSelected.Content.ToString() != "Tafel")
+            if (TafelSelected.Content.ToString() != "Tafel" && MenuKaart.MenuList.SelectedIndex != -1)
             {
-                if (MenuKaart.MenuList.SelectedIndex != -1)
+                if (Table == "Tafel_1")
                 {
-                    if (Table == "Tafel_1")
-                    {
-                        Tafel_1.Items.Add(MenuKaart.MenuList.SelectedItem);
-                    }
-                    WriteText();
+                    Tafel_1.Items.Add(MenuKaart.MenuList.SelectedItem);
                 }
+                WriteText();
             }
         }
 
@@ -211,6 +208,7 @@ namespace Eggs_and_Ham
                 lines[i] = line;
                 i++;
             }
+            sr.Close();
             return lines;
         }
 
@@ -226,6 +224,7 @@ namespace Eggs_and_Ham
                         sw.WriteLine(line);
                     }
                 }
+                sw.Close();
             }
         }
     }
