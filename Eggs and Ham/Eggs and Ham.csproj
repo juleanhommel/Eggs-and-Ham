@@ -142,5 +142,62 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="List\Tafel_2.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="List\Tafel_3.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="List\Tafel_11.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="List\Tafel_10.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="List\Tafel_9.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="List\Tafel_8.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="List\Tafel_7.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="List\Tafel_6.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="List\Tafel_5.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="List\Tafel_4.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="List\Tafel_20.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="List\Tafel_21.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="List\Tafel_12.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="List\Tafel_13.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="List\Tafel_14.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="List\Tafel_15.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="List\Tafel_16.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="List\Tafel_17.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="List\Tafel_18.txt" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
