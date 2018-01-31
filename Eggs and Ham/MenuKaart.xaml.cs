@@ -42,7 +42,7 @@ namespace Eggs_and_Ham
         private void Terug_Click(object sender, RoutedEventArgs e)
         {
             MenuBox.Children.Clear();
-            MainWindow.MainMenu.Navigate(new HoofdMenu());
+            MainWindow.MainMenu.Navigate(new HoofdMenu());  
         }
 
         public static string[] LoadMenu()
