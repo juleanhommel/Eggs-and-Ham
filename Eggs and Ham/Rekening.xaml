@@ -5,13 +5,17 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:Eggs_and_Ham"
       mc:Ignorable="d" 
-      d:DesignHeight="300" d:DesignWidth="300"
+      d:DesignHeight="600" d:DesignWidth="600"
       Title="Rekening">
 
     <Grid>
 
         <StackPanel Name="BackBarRekening" HorizontalAlignment="Stretch" Height="40" VerticalAlignment="Bottom" Orientation="Horizontal">
             <Button Name="Terug" Content="Terug" Width="71" Margin="0,0,0,3" Click="Terug_Click"/>
+        </StackPanel>
+        <StackPanel HorizontalAlignment="Left" Height="315" Margin="0,38,0,0" VerticalAlignment="Top" Width="168">
+            <Label Content="Reserveringen:"/>
+            <StackPanel Name="ReserveList" Height="287"/>
         </StackPanel>
 
     </Grid>
