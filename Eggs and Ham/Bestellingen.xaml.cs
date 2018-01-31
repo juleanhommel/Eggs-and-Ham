@@ -376,6 +376,139 @@ namespace Eggs_and_Ham
                         sw.WriteLine(line);
                     }
                 }
+                else if (Table == "Tafel_2")
+                {
+                    foreach (string line in Tafel_2.Items)
+                    {
+                        sw.WriteLine(line);
+                    }
+                }
+                else if (Table == "Tafel_3")
+                {
+                    foreach (string line in Tafel_3.Items)
+                    {
+                        sw.WriteLine(line);
+                    }
+                }
+                else if (Table == "Tafel_4")
+                {
+                    foreach (string line in Tafel_4.Items)
+                    {
+                        sw.WriteLine(line);
+                    }
+                }
+                else if (Table == "Tafel_5")
+                {
+                    foreach (string line in Tafel_5.Items)
+                    {
+                        sw.WriteLine(line);
+                    }
+                }
+                else if (Table == "Tafel_6")
+                {
+                    foreach (string line in Tafel_6.Items)
+                    {
+                        sw.WriteLine(line);
+                    }
+                }
+                else if (Table == "Tafel_7")
+                {
+                    foreach (string line in Tafel_7.Items)
+                    {
+                        sw.WriteLine(line);
+                    }
+                }
+                else if (Table == "Tafel_8")
+                {
+                    foreach (string line in Tafel_8.Items)
+                    {
+                        sw.WriteLine(line);
+                    }
+                }
+                else if (Table == "Tafel_9")
+                {
+                    foreach (string line in Tafel_9.Items)
+                    {
+                        sw.WriteLine(line);
+                    }
+                }
+                else if (Table == "Tafel_10")
+                {
+                    foreach (string line in Tafel_10.Items)
+                    {
+                        sw.WriteLine(line);
+                    }
+                }
+                else if (Table == "Tafel_11")
+                {
+                    foreach (string line in Tafel_11.Items)
+                    {
+                        sw.WriteLine(line);
+                    }
+                }
+                else if (Table == "Tafel_12")
+                {
+                    foreach (string line in Tafel_12.Items)
+                    {
+                        sw.WriteLine(line);
+                    }
+                }
+                else if (Table == "Tafel_13")
+                {
+                    foreach (string line in Tafel_13.Items)
+                    {
+                        sw.WriteLine(line);
+                    }
+                }
+                else if (Table == "Tafel_14")
+                {
+                    foreach (string line in Tafel_14.Items)
+                    {
+                        sw.WriteLine(line);
+                    }
+                }
+                else if (Table == "Tafel_15")
+                {
+                    foreach (string line in Tafel_15.Items)
+                    {
+                        sw.WriteLine(line);
+                    }
+                }
+                else if (Table == "Tafel_16")
+                {
+                    foreach (string line in Tafel_16.Items)
+                    {
+                        sw.WriteLine(line);
+                    }
+                }
+                else if (Table == "Tafel_17")
+                {
+                    foreach (string line in Tafel_17.Items)
+                    {
+                        sw.WriteLine(line);
+                    }
+                }
+                else if (Table == "Tafel_18")
+                {
+                    foreach (string line in Tafel_18.Items)
+                    {
+                        sw.WriteLine(line);
+                    }
+                }
+                else if (Table == "Tafel_19")
+                {
+                    foreach (string line in Tafel_19.Items)
+                    {
+                        sw.WriteLine(line);
+                    }
+                }
+                else if (Table == "Tafel_20")
+                {
+                    foreach (string line in Tafel_20.Items)
+                    {
+                        sw.WriteLine(line);
+                    }
+                }
                 sw.Close();
             }
         }
