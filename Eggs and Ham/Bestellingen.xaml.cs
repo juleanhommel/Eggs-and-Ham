@@ -588,5 +588,93 @@ namespace Eggs_and_Ham
                 sw.Close();
             }
         }
+
+        private void Verwijder_Click(object sender, RoutedEventArgs e)
+        {
+            if (TafelSelected.Content.ToString() != "Tafel" && MenuKaart.MenuList.SelectedIndex != -1)
+            {
+                if (Table == "Tafel_1")
+                {
+                    Tafel_1.Items.Clear();
+                }
+                else if (Table == "Tafel_2")
+                {
+                    Tafel_2.Items.Clear();
+                }
+                else if (Table == "Tafel_3")
+                {
+                    Tafel_3.Items.Clear();
+                }
+                else if (Table == "Tafel_4")
+                {
+                    Tafel_4.Items.Clear();
+                }
+                else if (Table == "Tafel_5")
+                {
+                    Tafel_5.Items.Clear();
+                }
+                else if (Table == "Tafel_6")
+                {
+                    Tafel_6.Items.Clear();
+                }
+                else if (Table == "Tafel_7")
+                {
+                    Tafel_7.Items.Clear();
+                }
+                else if (Table == "Tafel_8")
+                {
+                    Tafel_8.Items.Clear();
+                }
+                else if (Table == "Tafel_9")
+                {
+                    Tafel_9.Items.Clear();
+                }
+                else if (Table == "Tafel_10")
+                {
+                    Tafel_10.Items.Clear();
+                }
+                else if (Table == "Tafel_11")
+                {
+                    Tafel_11.Items.Clear();
+                }
+                else if (Table == "Tafel_12")
+                {
+                    Tafel_12.Items.Clear();
+                }
+                else if (Table == "Tafel_13")
+                {
+                    Tafel_13.Items.Clear();
+                }
+                else if (Table == "Tafel_14")
+                {
+                    Tafel_14.Items.Clear();
+                }
+                else if (Table == "Tafel_15")
+                {
+                    Tafel_15.Items.Clear();
+                }
+                else if (Table == "Tafel_16")
+                {
+                    Tafel_16.Items.Clear();
+                }
+                else if (Table == "Tafel_17")
+                {
+                    Tafel_17.Items.Clear();
+                }
+                else if (Table == "Tafel_18")
+                {
+                    Tafel_18.Items.Clear();
+                }
+                else if (Table == "Tafel_19")
+                {
+                    Tafel_19.Items.Clear();
+                }
+                else if (Table == "Tafel_20")
+                {
+                    Tafel_20.Items.Clear();
+                }
+                WriteText();
+            }
+        }
     }
 }
