@@ -21,7 +21,7 @@ namespace Eggs_and_Ham
     /// </summary>
     public partial class Reserveringen : Page
     {
-
+        public int vrij = 20;
         public Reserveringen()
         {
             InitializeComponent();
@@ -30,9 +30,14 @@ namespace Eggs_and_Ham
 
         private void Add_Click(object sender, RoutedEventArgs e)
         {
-            ResList.Items.Add(InvoerReservering.Text);
-            InvoerReservering.Text = "";
-            this.WriteText();
+            if (vrij > 0)
+            {
+                vrij--;
+                ResList.Items.Add(InvoerReservering.Text);
+                InvoerReservering.Text = "";
+                this.WriteText();
+            }
+            UpdatePlaatsen();
         }
 
         public void WriteText()
@@ -49,12 +54,15 @@ namespace Eggs_and_Ham
 
         public void LoadRes()
         {
+            vrij = 20;
             ResList.Items.Clear();
             string[] regels = LoadMenu();
             foreach (string line in regels)
             {
                 ResList.Items.Add(line);
+                vrij--;
             }
+            UpdatePlaatsen();
         }
 
         public static string[] LoadMenu()
@@ -85,7 +93,13 @@ namespace Eggs_and_Ham
                 int index = ResList.SelectedIndex;
                 ResList.Items.RemoveAt(index);
                 this.WriteText();
+                vrij++;
             }
+            UpdatePlaatsen();
+        }
+        public void UpdatePlaatsen()
+        {
+            plaatsen.Content = "Beschikbare plaatsen: " + vrij;
         }
     }
 }
