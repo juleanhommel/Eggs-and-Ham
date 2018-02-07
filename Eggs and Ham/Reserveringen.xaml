@@ -11,7 +11,7 @@
     <Grid Name="ReserveringMain">
 
         <Label Content="Reserveringen:" HorizontalAlignment="Left" Margin="20,37,0,0" VerticalAlignment="Top" Width="112" Height="26"/>
-        <ListBox Name="ResList" HorizontalAlignment="Left" Height="400" Margin="20,68,0,0" VerticalAlignment="Top" Width="183" Grid.ColumnSpan="2"/>
+        <ListBox Name="ResList" HorizontalAlignment="Left" Height="400" Margin="20,68,0,0" VerticalAlignment="Top" Width="183" Grid.ColumnSpan="2" SelectionChanged="SelectReserve"/>
 
         <StackPanel Height="40" VerticalAlignment="Bottom" Width="600" Orientation="Horizontal">
             <Button Name="Terug" Content="Terug" VerticalAlignment="Stretch" Width="75" Click="Terug_Click"/>
@@ -21,5 +21,40 @@
         </StackPanel>
         <Label Name="plaatsen" Content="Beschikbare plaatsen: " HorizontalAlignment="Left" Margin="208,68,0,0" VerticalAlignment="Top" Height="32" Width="184"/>
 
+        <Grid HorizontalAlignment="Left" Height="259" Margin="223,100,0,0" VerticalAlignment="Top" Width="314">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="75"/>
+                <ColumnDefinition Width="75"/>
+                <ColumnDefinition Width="75"/>
+                <ColumnDefinition Width="75"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="50"/>
+            </Grid.RowDefinitions>
+            <Button Name="Tafel1"  Content="Tafel 1" Grid.Row="0" Grid.Column="0"  HorizontalAlignment="Stretch"  VerticalAlignment="Stretch" Width="75" Height="49" Click="SelectTable"/>
+            <Button Name="Tafel2"  Content="Tafel 2" Grid.Row="0" Grid.Column="1"  HorizontalAlignment="Stretch"  VerticalAlignment="Stretch" Width="75" Height="49" Click="SelectTable"/>
+            <Button Name="Tafel3"  Content="Tafel 3" Grid.Row="0" Grid.Column="2"  HorizontalAlignment="Stretch"  VerticalAlignment="Stretch" Width="75" Height="49" Click="SelectTable"/>
+            <Button Name="Tafel4"  Content="Tafel 4" Grid.Row="0" Grid.Column="3"  HorizontalAlignment="Stretch"  VerticalAlignment="Stretch" Width="75" Height="49" Click="SelectTable"/>
+            <Button Name="Tafel5"  Content="Tafel 5" Grid.Row="1" Grid.Column="0"  HorizontalAlignment="Stretch"  VerticalAlignment="Stretch" Width="75" Height="49" Click="SelectTable"/>
+            <Button Name="Tafel6"  Content="Tafel 6" Grid.Row="1" Grid.Column="1"  HorizontalAlignment="Stretch"  VerticalAlignment="Stretch" Width="75" Height="49" Click="SelectTable"/>
+            <Button Name="Tafel7"  Content="Tafel 7" Grid.Row="1" Grid.Column="2"  HorizontalAlignment="Stretch"  VerticalAlignment="Stretch" Width="75" Height="49" Click="SelectTable"/>
+            <Button Name="Tafel8"  Content="Tafel 8" Grid.Row="1" Grid.Column="3"  HorizontalAlignment="Stretch"  VerticalAlignment="Stretch" Width="75" Height="49" Click="SelectTable"/>
+            <Button Name="Tafel9"  Content="Tafel 9" Grid.Row="2" Grid.Column="0"  HorizontalAlignment="Stretch"  VerticalAlignment="Stretch" Width="75" Height="49" Click="SelectTable"/>
+            <Button Name="Tafel10" Content="Tafel 10" Grid.Row="2" Grid.Column="1" HorizontalAlignment="Stretch"  VerticalAlignment="Stretch" Width="75" Height="49" Click="SelectTable"/>
+            <Button Name="Tafel11" Content="Tafel 11" Grid.Row="2" Grid.Column="2" HorizontalAlignment="Stretch"  VerticalAlignment="Stretch" Width="75" Height="49" Click="SelectTable"/>
+            <Button Name="Tafel12" Content="Tafel 12" Grid.Row="2" Grid.Column="3" HorizontalAlignment="Stretch"  VerticalAlignment="Stretch" Width="75" Height="49" Click="SelectTable"/>
+            <Button Name="Tafel13" Content="Tafel 13" Grid.Row="3" Grid.Column="0" HorizontalAlignment="Stretch"  VerticalAlignment="Stretch" Width="75" Height="49" Click="SelectTable"/>
+            <Button Name="Tafel14" Content="Tafel 14" Grid.Row="3" Grid.Column="1" HorizontalAlignment="Stretch"  VerticalAlignment="Stretch" Width="75" Height="49" Click="SelectTable"/>
+            <Button Name="Tafel15" Content="Tafel 15" Grid.Row="3" Grid.Column="2" HorizontalAlignment="Stretch"  VerticalAlignment="Stretch" Width="75" Height="49" Click="SelectTable"/>
+            <Button Name="Tafel16" Content="Tafel 16" Grid.Row="3" Grid.Column="3" HorizontalAlignment="Stretch"  VerticalAlignment="Stretch" Width="75" Height="49" Click="SelectTable"/>
+            <Button Name="Tafel17" Content="Tafel 17" Grid.Row="4" Grid.Column="0" HorizontalAlignment="Stretch"  VerticalAlignment="Stretch" Width="75" Height="49" Click="SelectTable"/>
+            <Button Name="Tafel18" Content="Tafel 18" Grid.Row="4" Grid.Column="1" HorizontalAlignment="Stretch"  VerticalAlignment="Stretch" Width="75" Height="49" Click="SelectTable"/>
+            <Button Name="Tafel19" Content="Tafel 19" Grid.Row="4" Grid.Column="2" HorizontalAlignment="Stretch"  VerticalAlignment="Stretch" Width="75" Height="49" Click="SelectTable"/>
+            <Button Name="Tafel20" Content="Tafel 20" Grid.Row="4" Grid.Column="3" HorizontalAlignment="Stretch"  VerticalAlignment="Stretch" Click="SelectTable"/>
+        </Grid>
     </Grid>
 </Page>
